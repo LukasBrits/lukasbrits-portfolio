@@ -5,11 +5,12 @@
 .main {
   min-height: 100vh;
   padding: 4rem 0;
+  padding-left: 15%;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .footer {
@@ -47,8 +48,75 @@
 }
 
 .title,
+.gradient-text {
+  background-color: white;
+  background-image: linear-gradient(
+    90deg,
+    #c5c3e0,
+    #d0bcd4,
+    #ddaec7,
+    #dc9dc1,
+    #d361a2,
+    #ae1dda,
+    #ae1dda,
+    #820ae3,
+    #820ae3,
+    #5c06e3,
+    #5c06e3,
+    #820ae3,
+    #ae1dda,
+    #d361a2,
+    #dc9dc1,
+    #ddaec7,
+    #d0bcd4,
+    #c5c3e0
+  );
+  background-size: 650px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.title,
 .description {
-  text-align: center;
+  text-align: left;
 }
 
 .description {

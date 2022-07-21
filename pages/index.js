@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <p className={utilStyles.headingLg}>Hi, my name is</p>
         <h1 className={styles.title}>Lukas Brits</h1>
       </main>
 
